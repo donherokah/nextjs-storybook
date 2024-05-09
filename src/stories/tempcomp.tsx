@@ -23,16 +23,21 @@ interface ButtonProps {
     onClick?: () => void;
   }
 
-const Tempcomp = ({
+const GetOTPButton = ({
     primary = false,
     size = 'medium',
-    backgroundColor,
+    backgroundColor,    
     label,
     ...props
   }: ButtonProps) => {
   return (
-    <div>Tempcomp</div>
+    <div>
+        {/* <input type='text' className='bg-[green] text-[white]'/> */}
+        <button style={{background:backgroundColor,color:'white',width:'14rem',height:'3rem',borderRadius:'1rem'}}>
+            GET OTP
+        </button>
+    </div>
   )
 }
 
-export default Tempcomp
+export default GetOTPButton
